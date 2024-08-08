@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
-import { DynamooseModule } from 'nestjs-dynamoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { DynamoModule } from './dynamo/dynamo.module';
+import { DynamooseModule } from './dynamoose/dynamoose.module';
+import { UserModule } from './user/user.module';
 
 @Module({
-  imports: [DynamooseModule.forRoot(), DynamoModule],
+  imports: [DynamooseModule, UserModule],
   controllers: [AppController],
   providers: [AppService],
 })

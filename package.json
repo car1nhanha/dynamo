@@ -26,7 +26,6 @@
     "@nestjs/platform-express": "^10.0.0",
     "aws-sdk": "^2.1669.0",
     "dynamoose": "^4.0.1",
-    "nestjs-dynamoose": "^0.5.8",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1"
   },
